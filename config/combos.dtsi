@@ -34,11 +34,12 @@ COMBO(greater_than,    &kp GT,               15 25, QWR CLM, 40)
 
 // Text processing
 COMBO(capswd,          &caps_word,           13 16, QWR CLM, 60)
-// COMBO(undo,            &kp LC(LG(Z)),        25 26, QWR CLM, 40)
-// COMBO(cut,             &kp LC(LG(X)),        26 28, QWR CLM, 40)
-// COMBO(copy,            &kp LC(LG(C)),        26 27, QWR CLM, 40)
-// COMBO(paste,           &kp LC(LG(V)),     26 27 28, QWR CLM, 40)
-// COMBO(select_all,      &kp LC(LG(A)),        25 28, QWR CLM, 40)
+COMBO(undo,            &kp LG(Z),            20 21, QWR CLM, 40)
+COMBO(redo,            &kp LG(LS(Z)),     20 21 22, QWR CLM, 40)
+COMBO(copy,            &kp LG(C),            21 22, QWR CLM, 40)
+COMBO(paste,           &kp LG(V),         21 22 23, QWR CLM, 40)
+COMBO(cut,             &kp LG(X),            21 23, QWR CLM, 40)
+//COMBO(select_all,      &kp LG(A),            25 28, QWR CLM, 40)
 
 // System
 COMBO(launcher,        &kp LG(SPACE),     11 12 13, QWR CLM, 40)
