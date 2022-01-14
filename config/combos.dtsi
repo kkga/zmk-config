@@ -1,0 +1,61 @@
+/*                KEY POSITIONS
+  ╭────────────────────╮ ╭────────────────────╮
+  │  0   1   2   3   4 │ │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            */
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+  combo_##NAME { \
+    timeout-ms = <TERM>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
+
+// Big keys
+COMBO(esc,             &kp ESC,               2  3, QWR CLM, 40)
+COMBO(tab,             &kp TAB,              22 23, QWR CLM, 40)
+COMBO(ret,             &kp RET,              26 27, QWR CLM, 40)
+COMBO(bspc,            &kp BSPC,             17 18, QWR CLM, 40)
+
+// Brackets (vertical combos)
+COMBO(left_bracket,    &kp LBKT,              4 14, QWR CLM, 40)
+COMBO(right_bracket,   &kp RBKT,              5 15, QWR CLM, 40)
+COMBO(left_paren,      &kp LPAR,              3 13, QWR CLM, 40)
+COMBO(right_paren,     &kp RPAR,              6 16, QWR CLM, 40)
+COMBO(left_brace,      &kp LBRC,              2 12, QWR CLM, 40)
+COMBO(right_brace,     &kp RBRC,              7 17, QWR CLM, 40)
+COMBO(less_than,       &kp LT,               14 24, QWR CLM, 40)
+COMBO(greater_than,    &kp GT,               15 25, QWR CLM, 40)
+
+// Text processing
+COMBO(capswd,          &caps_word,           13 16, QWR CLM, 60)
+// COMBO(undo,            &kp LC(LG(Z)),        25 26, QWR CLM, 40)
+// COMBO(cut,             &kp LC(LG(X)),        26 28, QWR CLM, 40)
+// COMBO(copy,            &kp LC(LG(C)),        26 27, QWR CLM, 40)
+// COMBO(paste,           &kp LC(LG(V)),     26 27 28, QWR CLM, 40)
+// COMBO(select_all,      &kp LC(LG(A)),        25 28, QWR CLM, 40)
+
+// System
+COMBO(launcher,        &kp LG(SPACE),     11 12 13, QWR CLM, 40)
+// COMBO(power,           &kp C_POWER,        4  5,    QWR CLM, 40)
+// COMBO(menu_search,     &kp LG(LS(SLASH)), 27 28,    QWR CLM, 40)
+// COMBO(mic_mute_left,   &kp LG(BACKSLASH), 13 23,    QWR CLM, 40)
+// COMBO(mic_mute_right,  &kp LG(BACKSLASH), 16 26,    QWR CLM, 40)
+
+// Symbols
+COMBO(colon,           &kp COLON,             6  7, QWR CLM, 40)
+COMBO(equal,           &kp EQUAL,          6  7  8, QWR CLM, 40)
+COMBO(under,           &kp UNDER,             7  8, QWR CLM, 40)
+COMBO(bslsh,           &kp BSLH,             28 29, QWR CLM, 40)
+COMBO(pipe,            &kp PIPE,          27 28 29, QWR CLM, 40)
+
+// Numpad symbols
+COMBO(num_comma,       &kp COMMA,            26 27,     NUM, 40)
+COMBO(num_dot,         &kp DOT,              27 28,     NUM, 40)
+
+// vim:ft=c
