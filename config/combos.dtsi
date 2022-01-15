@@ -43,8 +43,8 @@ COMBO(cut_mac,         &kp LG(X),            21 23, QWR CLM, 80)
 
 // System
 COMBO(launch_mac,      &kp LG(SPACE),     11 12 13, QWR CLM, 60)
-COMBO(browser_back,    &kp LC(LBKT),          1  2,     EXT, 60)
-COMBO(browser_fwd,     &kp LC(RBKT),          3  4,     EXT, 60)
+COMBO(back_mac,        &kp LG(LBKT),          1  2,     EXT, 60)
+COMBO(fwd_mac,         &kp LG(RBKT),          3  4,     EXT, 60)
 // COMBO(power,           &kp C_POWER,        4  5,    QWR CLM, 40)
 // COMBO(menu_search,     &kp LG(LS(SLASH)), 27 28,    QWR CLM, 40)
 // COMBO(mic_mute_left,   &kp LG(BACKSLASH), 13 23,    QWR CLM, 40)
