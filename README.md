@@ -1,6 +1,7 @@
-Keymap for 34 keys.
+Keymap for 34 keys. Heavily based on
+[Seniply](https://stevep99.github.io/seniply/).
 
-- keymap file: [config/34keys.keymap](config/34keys.keymap)
-- combos definitions: [config/combos.dtsi](config/combos.dtsi)
+- ZMK keymap file: [config/34keys.keymap](config/34keys.keymap)
+- combo definitions: [config/combos.dtsi](config/combos.dtsi)
 
 ![](./34keys.png)
