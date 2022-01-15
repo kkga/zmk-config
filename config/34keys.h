@@ -10,12 +10,14 @@
 #define FUN 5
 
 // Custom keycodes
-#define MEH    LS(LA(LCTRL))
-#define D_LT   LC(LG(LEFT))
-#define D_RT   LC(LG(RIGHT))
-#define TAB_RT LC(TAB)
-#define TAB_LT LC(LS(TAB))
-#define BSPWRD LA(LC(BSPC))
+#define MEH        LS(LA(LCTRL))
+#define D_LT       LC(LG(LEFT))
+#define D_RT       LC(LG(RIGHT))
+#define TAB_RT     LC(TAB)
+#define TAB_LT     LC(LS(TAB))
+#define BSPWRD     LA(LC(BSPC))
+#define UNDO_MAC   LG(Z)
+#define REDO_MAC   LG(LS(Z))
 
 // Custom behaviors to emulate callum-style sticky keys, implemented in keymap file
 #define SK(KEY)   &nk     KEY   KEY

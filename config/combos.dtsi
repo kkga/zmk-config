@@ -34,15 +34,15 @@ COMBO(greater_than,    &kp GT,               15 25, QWR CLM, 40)
 
 // Text processing
 COMBO(capswd,          &caps_word,           13 16, QWR CLM, 60)
-COMBO(undo,            &kp LG(Z),            20 21, QWR CLM, 40)
-COMBO(redo,            &kp LG(LS(Z)),     20 21 22, QWR CLM, 40)
-COMBO(copy,            &kp LG(C),            21 22, QWR CLM, 40)
-COMBO(paste,           &kp LG(V),         21 22 23, QWR CLM, 40)
-COMBO(cut,             &kp LG(X),            21 23, QWR CLM, 40)
+COMBO(undo_mac,        &kp LG(Z),            20 21, QWR CLM, 80)
+COMBO(redo_mac,        &kp LG(LS(Z)),        23 24, QWR CLM, 80)
+COMBO(copy_mac,        &kp LG(C),            21 22, QWR CLM, 80)
+COMBO(paste_mac,       &kp LG(V),         21 22 23, QWR CLM, 80)
+COMBO(cut_mac,         &kp LG(X),            21 23, QWR CLM, 80)
 //COMBO(select_all,      &kp LG(A),            25 28, QWR CLM, 40)
 
 // System
-COMBO(launcher,        &kp LG(SPACE),     11 12 13, QWR CLM, 40)
+COMBO(launch_mac,      &kp LG(SPACE),     11 12 13, QWR CLM, 60)
 // COMBO(power,           &kp C_POWER,        4  5,    QWR CLM, 40)
 // COMBO(menu_search,     &kp LG(LS(SLASH)), 27 28,    QWR CLM, 40)
 // COMBO(mic_mute_left,   &kp LG(BACKSLASH), 13 23,    QWR CLM, 40)
