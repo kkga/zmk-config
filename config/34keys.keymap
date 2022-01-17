@@ -43,7 +43,7 @@
       quick-tap-ms = <180>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
-    }
+    };
 
     // easy alt-tab with alt+space thumb using mod-morphs
     spctab: space_tab {

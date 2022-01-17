@@ -16,6 +16,12 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
+// Firmware
+COMBO(reset_left,      &reset,             0 10 20, QWR CLM, 60)
+COMBO(reset_right,     &reset,             9 19 29, QWR CLM, 60)
+COMBO(boot_left,       &bootloader,     30 0 10 20, QWR CLM, 60)
+COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
+
 // Big keys
 COMBO(esc,             &kp ESC,               2  3, QWR CLM, 40)
 COMBO(tab,             &kp TAB,              22 23, QWR CLM, 40)
