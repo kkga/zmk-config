@@ -23,9 +23,10 @@
   };
 
   behaviors {
+    // mods on the base alpha layer
     am: alpha_mods {
       compatible = "zmk,behavior-hold-tap";
-      label = "alpha mods";
+      label = "ALPHA_MOD";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       quick-tap-ms = <180>;
@@ -33,7 +34,18 @@
       bindings = <&kp>, <&kp>;
     };
 
-    // Easy alt-tab with alt+space thumb using mod-morphs
+    // "auto-shifted" symbols when holding num keys on number layer
+    nms: number_symbol {
+      compatible = "zmk,behavior-hold-tap";
+      label = "NUM_SYM";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <180>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    }
+
+    // easy alt-tab with alt+space thumb using mod-morphs
     spctab: space_tab {
       compatible = "zmk,behavior-mod-morph";
       label = "SPC_TAB";
@@ -123,7 +135,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp BSLH      &kp PIPE      &kp LBRC      &kp LPAR      &kp LBKT          &kp MINUS     &kp N4        &kp N5        &kp N6        &kp N0
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp GRAVE     &kp TILDE     &kp RBRC      &kp RPAR      &kp RBKT          &kp ASTRK     &kp N1        &kp N2        &kp N3        &kp SLASH
+     &kp GRAVE     &kp TILDE     &kp RBRC      &kp RPAR      &kp RBKT          &kp ASTRK     &nms N1 EXCL  &nms N2 AT    &nms N3 HASH  &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                ___           MO(SYM)           ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
