@@ -5,9 +5,8 @@
 #define QWR 0
 #define CLM 1
 #define NUM 2
-#define SYM 3
-#define EXT 4
-#define FUN 5
+#define EXT 3
+#define FUN 4
 
 // Custom keycodes
 #define MEH        LS(LA(LCTRL))
