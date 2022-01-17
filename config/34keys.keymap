@@ -131,11 +131,11 @@
       label = "NUM";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp EXCL      &kp AT        &kp SEMI      &kp COLON     &kp UNDER         &kp PLUS      &kp N7        &kp N8        &kp N9        &kp EQUAL
+     &kp EXCL      &kp AT        &kp SEMI      &kp COLON     &kp UNDER         &kp PLUS      &nms AMPS N7  &nms GRAVE N8 &nms TILDE N9 &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp BSLH      &kp PIPE      &kp LBRC      &kp LPAR      &kp LBKT          &kp MINUS     &kp N4        &kp N5        &kp N6        &kp N0
+     &kp BSLH      &kp PIPE      &kp LBRC      &kp LPAR      &nms LT LBKT      &kp MINUS     &nms DLLR N4  &nms PRCNT N5 &nms CARET N6 &nms UNDER N0
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp GRAVE     &kp TILDE     &kp RBRC      &kp RPAR      &kp RBKT          &kp ASTRK     &nms N1 EXCL  &nms N2 AT    &nms N3 HASH  &kp SLASH
+     &kp GRAVE     &kp TILDE     &kp RBRC      &kp RPAR      &nms GT RBKT      &kp ASTRK     &nms EXCL N1  &nms AT N2    &nms HASH N3  &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                ___           MO(SYM)           ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
