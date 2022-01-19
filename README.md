@@ -17,7 +17,11 @@ Keymap for 34 keys. Mostly based on
   Function, but I like switching between Number and Extend quickly without
   accidentally activating the Function layer.
 
+---
+
 - ZMK keymap file: [config/34keys.keymap](config/34keys.keymap)
 - combo definitions: [config/combos.dtsi](config/combos.dtsi)
+
+---
 
 ![](./34keys.png)
