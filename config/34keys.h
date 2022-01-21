@@ -10,6 +10,7 @@
 
 // Custom keycodes
 #define MEH        LS(LA(LCTRL))
+#define TMUX       LC(A)
 #define D_LT       LC(LG(LEFT))
 #define D_RT       LC(LG(RIGHT))
 #define TAB_RT     LC(TAB)
@@ -17,6 +18,7 @@
 #define BSPWRD     LA(LC(BSPC))
 #define UNDO_MAC   LG(Z)
 #define REDO_MAC   LG(LS(Z))
+#define TMUX       LC(A)
 
 // Custom behaviors to emulate callum-style sticky keys, implemented in keymap file
 #define SK(KEY)   &nk     KEY   KEY
