@@ -23,20 +23,20 @@ COMBO(boot_left,       &bootloader,     30 0 10 20, QWR CLM, 60)
 COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
 
 // Big keys
-COMBO(esc,             &kp ESC,              12 13, QWR CLM, 40)
-COMBO(tab,             &kp TAB,              13 14, QWR CLM, 40)
+COMBO(esc,             &kp ESC,              11 12, QWR CLM, 40)
+COMBO(tab,             &kp TAB,              12 13, QWR CLM, 40)
 COMBO(ret,             &kp RET,              16 17, QWR CLM, 40)
-COMBO(bspc,            &kp BSPC,             15 16, QWR CLM, 40)
+COMBO(bspc,            &kp BSPC,             17 18, QWR CLM, 40)
 
 // Brackets
-COMBO(left_bracket,    &kp LBKT,              1  2, QWR CLM, 40)
-COMBO(right_bracket,   &kp RBKT,              7  8, QWR CLM, 40)
-COMBO(left_paren,      &kp LPAR,             11 12, QWR CLM, 40)
-COMBO(right_paren,     &kp RPAR,             17 18, QWR CLM, 40)
-COMBO(left_brace,      &kp LBRC,             21 22, QWR CLM, 40)
-COMBO(right_brace,     &kp RBRC,             27 28, QWR CLM, 40)
-COMBO(less_than,       &kp LT,                2 11, QWR CLM, 40)
-COMBO(greater_than,    &kp GT,                7 18, QWR CLM, 40)
+COMBO(left_bracket,    &kp LBKT,             31  3, QWR CLM, 40)
+COMBO(left_paren,      &kp LPAR,             31 13, QWR CLM, 40)
+COMBO(left_brace,      &kp LBRC,             31 23, QWR CLM, 40)
+COMBO(less_than,       &kp LT,               31 24, QWR CLM, 40)
+COMBO(right_bracket,   &kp RBKT,             32  6, QWR CLM, 40)
+COMBO(right_paren,     &kp RPAR,             32 16, QWR CLM, 40)
+COMBO(right_brace,     &kp RBRC,             32 26, QWR CLM, 40)
+COMBO(greater_than,    &kp GT,               32 25, QWR CLM, 40)
 
 // Text processing
 COMBO(capswd,          &caps_word,           13 16, QWR CLM, 60)
