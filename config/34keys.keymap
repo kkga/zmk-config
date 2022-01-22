@@ -4,18 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "34keys.h"
 
-// &sk {
-//   release-after-ms = <STICKY_KEY_TIMEOUT>;
-// };
-
 &caps_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0>;
 };
-
-// &kscan0 {
-//   debounce-period = <10>;
-// };
-
 
 / {
   combos {
@@ -23,28 +14,6 @@
   };
 
   behaviors {
-    // mods on the base alpha layer
-    // am: alpha_mods {
-    //   compatible = "zmk,behavior-hold-tap";
-    //   label = "ALPHA_MOD";
-    //   #binding-cells = <2>;
-    //   tapping-term-ms = <200>;
-    //   quick-tap-ms = <180>;
-    //   flavor = "tap-preferred";
-    //   bindings = <&kp>, <&kp>;
-    // };
-
-    // "auto-shifted" symbols when holding num keys on number layer
-    nms: number_symbol {
-      compatible = "zmk,behavior-hold-tap";
-      label = "NUM_SYM";
-      #binding-cells = <2>;
-      tapping-term-ms = <200>;
-      quick-tap-ms = <180>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&kp>;
-    };
-
     // easy alt-tab with alt+space thumb using mod-morphs
     spctab: space_tab {
       compatible = "zmk,behavior-mod-morph";
@@ -53,38 +22,6 @@
       bindings = <&kp SPACE>, <&kp TAB>;
       mods = <MOD_LALT>;
     };
-
-    skq: sticky_key_quick_release {
-      compatible = "zmk,behavior-sticky-key";
-      label = "STICKY_KEY_QUICK_RELEASE";
-      #binding-cells = <1>;
-      bindings = <&kp>;
-      quick-release;
-      release-after-ms = <STICKY_KEY_TIMEOUT>;
-    };
-
-    // Use hold-tap to enable rolling sticky keys:
-    // https://github.com/zmkfirmware/zmk/issues/829#issuecomment-979864774
-    nk: not_so_sticky_key {
-      compatible = "zmk,behavior-hold-tap";
-      label = "NOT_SO_STICKY_KEY";
-      #binding-cells = <2>;
-      tapping_term_ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&sk>;
-    };
-
-    // A hold-tap that activates without delay (like `&mo`)
-    mo_tap: mo_with_tap {
-      compatible = "zmk,behavior-hold-tap";
-      label = "MO_WITH_TAP";
-      #binding-cells = <2>;
-      tapping_term_ms = <0>;
-      retro-tap;
-      flavor = "hold-preferred";
-      bindings = <&mo>, <&kp>;
-    };
-
   };
 
   keymap {
