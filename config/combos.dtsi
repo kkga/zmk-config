@@ -23,6 +23,9 @@ COMBO(reset_right,     &reset,             9 19 29, QWR CLM, 60)
 COMBO(boot_left,       &bootloader,     30 0 10 20, QWR CLM, 60)
 COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
 
+// Layers (for one-handed use)
+COMBO(layer_extend)    &mo EXT               33 29, QWR CLM, 60)
+
 // Big keys
 // home row
 COMBO(esc,             &kp ESC,              11 12, QWR CLM, 40)
@@ -61,7 +64,7 @@ COMBO(colon,           &kp COLON,             6  7, QWR CLM, 40)
 COMBO(equal,           &kp EQUAL,          6  7  8, QWR CLM, 40)
 COMBO(under,           &kp UNDER,             7  8, QWR CLM, 40)
 COMBO(bslsh,           &kp BSLH,             27 28, QWR CLM, 40)
-COMBO(pipe,            &kp PIPE,          27 28 29, QWR CLM, 40)
+COMBO(pipe,            &kp PIPE,             26 28, QWR CLM, 40)
 
 // Numpad symbols
 // num layer
