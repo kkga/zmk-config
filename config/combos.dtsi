@@ -24,12 +24,12 @@ COMBO(boot_left,       &bootloader,     30 0 10 20, QWR CLM, 60)
 COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
 
 // Layers (for one-handed use)
-COMBO(layer_extend)    &mo EXT,              33 29, QWR CLM, 60)
+COMBO(layer_extend,    &mo EXT,              33 29, QWR CLM, 60)
 
 // Mods
-COMBO(mod_lcmd)        &sk LCMD,              3  4, QWR CLM, 40)
-COMBO(mod_lctl)        &sk LCTL,             13 14, QWR CLM, 40)
-COMBO(mod_lsft)        &sk LSFT,             23 24, QWR CLM, 40)
+COMBO(mod_lcmd,        &sk LCMD,              3  4, QWR CLM, 40)
+COMBO(mod_lctl,        &sk LCTL,             13 14, QWR CLM, 40)
+COMBO(mod_lsft,        &sk LSFT,             23 24, QWR CLM, 40)
 
 // Big keys
 // home row
