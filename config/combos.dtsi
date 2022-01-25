@@ -24,7 +24,7 @@ COMBO(boot_left,       &bootloader,     30 0 10 20, QWR CLM, 60)
 COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
 
 // Layers (for one-handed use)
-COMBO(layer_extend,    &mo EXT,              33 29, QWR CLM, 60)
+COMBO(layer_extend,    &mo EXT,              33 19, QWR CLM, 60)
 
 // Mods
 COMBO(mod_lcmd,        &sk LCMD,              3  4, QWR CLM, 40)
@@ -51,7 +51,7 @@ COMBO(greater_than,    &kp GT,               32 25, QWR CLM, 40)
 
 // Text processing
 // ext layer
-COMBO(capswd,          &caps_word,           14 15,     EXT, 60)
+COMBO(capswd,          &caps_word,           13 16,     EXT, 60)
 COMBO(copy_mac,        &kp LG(C),            21 22,     EXT, 40)
 COMBO(paste_mac,       &kp LG(V),            22 23,     EXT, 40)
 COMBO(cut_mac,         &kp LG(X),            21 23,     EXT, 40)
