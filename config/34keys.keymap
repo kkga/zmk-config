@@ -14,7 +14,7 @@
   };
 
   behaviors {
-    // easy alt-tab/cmd-tab with thumb space using mod-morphs
+    // easy alt-tab/cmd-tab with thumb using mod-morphs
     spctab: space_tab {
       compatible = "zmk,behavior-mod-morph";
       label = "SPC_TAB";
@@ -22,28 +22,8 @@
       bindings = <&kp SPACE>, <&kp TAB>;
       mods = <(MOD_LGUI|MOD_LALT)>;
     };
-    lp: left_hand_positional_hold_tap {
-      compatible = "zmk,behavior-hold-tap";
-      label = "LEFT_HOLD_TAP";
-      #binding-cells = <2>;
-      flavor = "tap-unless-interrupted";
-      tapping-term-ms = <240>;
-      quick-tap-ms = <180>;
-      bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33 31>; // rh keys: adding lh space at the end
-    };
-    rp: right_hand_positional_hold_tap {
-      compatible = "zmk,behavior-hold-tap";
-      label = "RIGHT_HOLD_TAP";
-      #binding-cells = <2>;
-      flavor = "tap-unless-interrupted";
-      tapping-term-ms = <240>;
-      quick-tap-ms = <180>;
-      bindings = <&kp>, <&kp>;
-      hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>; // lh keys
-    };
-  };
 
+  };
 
   keymap {
     compatible = "zmk,keymap";
@@ -60,7 +40,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &lp LGUI A    &lp LALT S    &lp LCTL D    &lp LSHFT F   &kp G             &kp H         &rp LSHFT J   &rp LCTL K    &rp LALT L    &rp LCMD SQT
+    &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
