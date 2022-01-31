@@ -14,7 +14,6 @@
   };
 
   behaviors {
-    // easy alt-tab/cmd-tab with thumb using mod-morphs
     spctab: space_tab {
       compatible = "zmk,behavior-mod-morph";
       label = "SPC_TAB";
@@ -26,8 +25,8 @@
       compatible = "zmk,behavior-hold-tap";
       label = "ALPHA_MODS";
       #binding-cells = <2>;
-      tapping-term-ms = <240>;
-      quick-tap-ms = <180>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <200>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
@@ -35,7 +34,6 @@
 
   conditional_layers {
     compatible = "zmk,conditional-layers";
-    // Define FUN layer as tri-state
     tri_layer {
       if-layers = <NAV SYM>;
       then-layer = <NUM>;
