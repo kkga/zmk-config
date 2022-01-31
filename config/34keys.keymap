@@ -83,9 +83,9 @@
       label = "SYM";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp SEMI      &kp MINUS     &kp PLUS      &kp UNDER     &kp EQUAL
+    &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp PLUS      &kp UNDER     &kp COLON     &kp SEMI      &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp TILDE     &kp LT        &kp LBRC      &kp LPAR      &kp LBKT          &kp COLON     &sk LSHFT     &sk LCTL      &sk LALT      &sk LCMD
+    &kp TILDE     &kp LT        &kp LBRC      &kp LPAR      &kp LBKT          &kp MINUS     &sk LSHFT     &sk LCTL      &sk LALT      &sk LCMD
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp GRAVE     &kp GT        &kp RBRC      &kp RPAR      &kp RBKT          &kp CARET     &kp AMPS      &kp ASTRK     &kp PIPE      &kp BSLH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
