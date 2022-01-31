@@ -16,29 +16,27 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-// Firmware
-// outer column + non-homing thumb
-COMBO(reset_left,      &reset,             0 10 20, QWR CLM, 60)
-COMBO(reset_right,     &reset,             9 19 29, QWR CLM, 60)
-COMBO(boot_left,       &bootloader,     30 0 10 20, QWR CLM, 60)
-COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
+// Brackets: inner columns
+COMBO(lbrc,            &kp LBRC,              3  4, QWR CLM, 40)
+COMBO(rbrc,            &kp RBRC,              5  6, QWR CLM, 40)
+COMBO(lpar,            &kp LPAR,             13 15, QWR CLM, 40)
+COMBO(rpar,            &kp RPAR,             15 16, QWR CLM, 40)
+COMBO(lbkt,            &kp LBKT,             23 24, QWR CLM, 40)
+COMBO(rbkt,            &kp RBKT,             25 26, QWR CLM, 40)
+COMBO(lt,              &kp LT,               13 24, QWR CLM, 40)
+COMBO(gt,              &kp GT,               16 25, QWR CLM, 40)
+COMBO(colon,           &kp COLON,             6  7, QWR CLM, 40)
+COMBO(equal,           &kp EQUAL,          6  7  8, QWR CLM, 40)
+COMBO(under,           &kp UNDER,             7  8, QWR CLM, 40)
+COMBO(bslh,            &kp BSLH,             28 29, QWR CLM, 40)
+COMBO(pipe,            &kp PIPE,             27 28, QWR CLM, 40)
 
 // Layers (for one-handed use)
 COMBO(layer_extend,    &mo NAV,              33 19, QWR CLM, 60)
 
 // Big keys
 COMBO(esc,             &kp ESC,               2  3, QWR CLM, 40)
-
-// Brackets
-// index finger + homing thumb
-COMBO(left_bracket,    &kp LBKT,             31  3, QWR CLM, 40)
-COMBO(left_paren,      &kp LPAR,             31 13, QWR CLM, 40)
-COMBO(left_brace,      &kp LBRC,             31 23, QWR CLM, 40)
-COMBO(less_than,       &kp LT,               31 24, QWR CLM, 40)
-COMBO(right_bracket,   &kp RBKT,             32  6, QWR CLM, 40)
-COMBO(right_paren,     &kp RPAR,             32 16, QWR CLM, 40)
-COMBO(right_brace,     &kp RBRC,             32 26, QWR CLM, 40)
-COMBO(greater_than,    &kp GT,               32 25, QWR CLM, 40)
+COMBO(bspc_l,          &kp BSPC,              1  2, QWR CLM, 40)
 
 // Text processing
 // ext layer
@@ -54,13 +52,12 @@ COMBO(back_mac,        &kp LG(LBKT),          1  2,     NAV, 40)
 COMBO(fwd_mac,         &kp LG(RBKT),          3  4,     NAV, 40)
 COMBO(menu_search,     &kp LG(LS(SLASH)),    27 28,     NAV, 40)
 
-// Symbols
-// above/below home row
-COMBO(colon,           &kp COLON,             6  7, QWR CLM, 40)
-COMBO(equal,           &kp EQUAL,          6  7  8, QWR CLM, 40)
-COMBO(under,           &kp UNDER,             7  8, QWR CLM, 40)
-COMBO(bslsh,           &kp BSLH,             27 28, QWR CLM, 40)
-COMBO(pipe,            &kp PIPE,             26 28, QWR CLM, 40)
+// Firmware
+// outer column + non-homing thumb
+COMBO(reset_left,      &reset,             0 10 20, QWR CLM, 60)
+COMBO(reset_right,     &reset,             9 19 29, QWR CLM, 60)
+COMBO(boot_left,       &bootloader,     30 0 10 20, QWR CLM, 60)
+COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
 
 
 // vim:ft=c
