@@ -22,7 +22,15 @@
       bindings = <&kp SPACE>, <&kp TAB>;
       mods = <(MOD_LGUI|MOD_LALT)>;
     };
-
+    am: alpha_modes {
+      compatible = "zmk,behavior-hold-tap";
+      label = "ALPHA_MODS";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <160>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
   };
 
   keymap {
@@ -40,7 +48,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SQT
+    &am LCMD A    &am LALT S    &am LCTL D    &am LSHFT F   &kp G             &kp H         &am LSHFT J   &am LCTL K    &am LALT L    &am LCMD SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
