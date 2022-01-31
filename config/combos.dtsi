@@ -26,17 +26,8 @@ COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
 // Layers (for one-handed use)
 COMBO(layer_extend,    &mo NAV,              33 19, QWR CLM, 60)
 
-// Mods
-COMBO(mod_lcmd,        &sk LCMD,              3  4, QWR CLM, 40)
-COMBO(mod_lctl,        &sk LCTL,             13 14, QWR CLM, 40)
-COMBO(mod_lsft,        &sk LSFT,             23 24, QWR CLM, 40)
-
 // Big keys
-// home row
-COMBO(esc,             &kp ESC,              11 12, QWR CLM, 40)
-COMBO(tab,             &kp TAB,              12 13, QWR CLM, 40)
-COMBO(ret,             &kp RET,              16 17, QWR CLM, 40)
-COMBO(bspc,            &kp BSPC,             17 18, QWR CLM, 40)
+COMBO(esc,             &kp ESC,               2  3, QWR CLM, 40)
 
 // Brackets
 // index finger + homing thumb
@@ -71,9 +62,5 @@ COMBO(under,           &kp UNDER,             7  8, QWR CLM, 40)
 COMBO(bslsh,           &kp BSLH,             27 28, QWR CLM, 40)
 COMBO(pipe,            &kp PIPE,             26 28, QWR CLM, 40)
 
-// Numpad symbols
-// num layer
-COMBO(num_comma,       &kp COMMA,            26 27,     SYM, 40)
-COMBO(num_dot,         &kp DOT,              27 28,     SYM, 40)
 
 // vim:ft=c
