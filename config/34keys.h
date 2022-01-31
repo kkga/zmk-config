@@ -6,7 +6,8 @@
 #define CLM 1
 #define NAV 2
 #define SYM 3
-#define FUN 4
+#define NUM 4
+#define FUN 5
 
 // Custom keycodes
 #define MEH        LS(LA(LCTRL))
