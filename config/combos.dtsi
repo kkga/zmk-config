@@ -51,10 +51,10 @@ COMBO(greater_than,    &kp GT,               32 25, QWR CLM, 40)
 
 // Text processing
 // ext layer
-COMBO(capswd,          &caps_word,           13 16,     EXT, 60)
-COMBO(copy_mac,        &kp LG(C),            21 22,     EXT, 40)
-COMBO(paste_mac,       &kp LG(V),            22 23,     EXT, 40)
-COMBO(cut_mac,         &kp LG(X),            21 23,     EXT, 40)
+COMBO(capswd,          &caps_word,           13 16,     NAV, 60)
+COMBO(copy_mac,        &kp LG(C),            21 22,     NAV, 40)
+COMBO(paste_mac,       &kp LG(V),            22 23,     NAV, 40)
+COMBO(cut_mac,         &kp LG(X),            21 23,     NAV, 40)
 
 // System
 // ext layer
@@ -73,7 +73,7 @@ COMBO(pipe,            &kp PIPE,             26 28, QWR CLM, 40)
 
 // Numpad symbols
 // num layer
-COMBO(num_comma,       &kp COMMA,            26 27,     NUM, 40)
-COMBO(num_dot,         &kp DOT,              27 28,     NUM, 40)
+COMBO(num_comma,       &kp COMMA,            26 27,     SYM, 40)
+COMBO(num_dot,         &kp DOT,              27 28,     SYM, 40)
 
 // vim:ft=c
