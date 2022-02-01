@@ -11,7 +11,7 @@
 
 // Custom keycodes
 #define MEH        LS(LA(LCTRL))
-#define TMUX       LC(A)
+#define TMUX       LC(G)
 #define D_LT       LC(LG(LEFT))
 #define D_RT       LC(LG(RIGHT))
 #define TAB_RT     LC(TAB)
@@ -19,4 +19,3 @@
 #define BSPWRD     LA(LC(BSPC))
 #define UNDO_MAC   LG(Z)
 #define REDO_MAC   LG(LS(Z))
-#define TMUX       LC(A)
