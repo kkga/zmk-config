@@ -35,8 +35,8 @@ COMBO(pipe,            &kp PIPE,             27 28, QWR CLM, 40)
 COMBO(layer_extend,    &mo NAV,              33 19, QWR CLM, 60)
 
 // Big keys
-COMBO(esc,             &kp ESC,               2  3, QWR CLM, 40)
 COMBO(bspc_l,          &kp BSPC,              1  2, QWR CLM, 40)
+COMBO(ret,             &kp RET,              26 27, QWR CLM, 40)
 
 // Text processing
 // ext layer
@@ -49,8 +49,8 @@ COMBO(cut_mac,         &kp LG(X),            21 23,     NAV, 40)
 // ext layer
 COMBO(launch_mac,      &kp LG(SPACE),     11 12 13,     NAV, 40)
 COMBO(back_mac,        &kp LG(LBKT),          1  2,     NAV, 40)
-COMBO(fwd_mac,         &kp LG(RBKT),          3  4,     NAV, 40)
-COMBO(menu_search,     &kp LG(LS(SLASH)),    27 28,     NAV, 40)
+COMBO(fwd_mac,         &kp LG(RBKT),          2  3,     NAV, 40)
+COMBO(menu_search,     &kp LG(LS(SLASH)),    28 29,     NAV, 60)
 
 // Firmware
 // outer column + non-homing thumb
