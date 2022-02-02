@@ -36,7 +36,8 @@ COMBO(layer_extend,    &mo NAV,              33 19, QWR CLM, 60)
 
 // Big keys
 COMBO(bspc_l,          &kp BSPC,              1  2, QWR CLM, 40)
-COMBO(ret,             &kp RET,              26 27, QWR CLM, 40)
+COMBO(ret_l,           &kp RET,              22 23, QWR CLM, 40)
+COMBO(ret_r,           &kp RET,              26 27, QWR CLM, 40)
 
 // Text processing
 // ext layer
