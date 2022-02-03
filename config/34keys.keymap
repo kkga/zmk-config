@@ -25,8 +25,8 @@
       compatible = "zmk,behavior-hold-tap";
       label = "ALPHA_MODS";
       #binding-cells = <2>;
-      tapping-term-ms = <200>;
-      quick-tap-ms = <200>;
+      tapping-term-ms = <180>;
+      quick-tap-ms = <180>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
