@@ -26,7 +26,7 @@
       label = "ALPHA_MODS";
       #binding-cells = <2>;
       tapping-term-ms = <180>;
-      quick-tap-ms = <180>;
+      quick-tap-ms = <240>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
@@ -87,7 +87,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp ESC       &sk LALT      &sk LSHFT     &sk LCTL      &sk MEH           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSPC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp UNDO_MAC  &kp LS(TAB)   &kp TAB       &sk LCMD      &kp REDO_MAC      &kp INS       &kp RET       XXX           XXX           &kp DEL
+    XXX           &kp LS(TAB)   &kp TAB       &sk LCMD      XXX               &kp INS       &kp RET       XXX           XXX           &kp DEL
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           &mo FUN           ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -98,11 +98,11 @@
       label = "SYM";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp MINUS     &kp PLUS      &kp UNDER     &kp SEMI
+    &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp STAR      XXX           &kp SEMI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp TILDE     &kp LT        &kp LBRC      &kp LPAR      &kp LBKT          &kp EQUAL     &sk LCTL      &sk LSHFT     &sk LALT      &kp COLON
+    &kp TILDE     XXX           XXX           XXX           XXX               &kp MINUS     &sk LCTL      &sk LSHFT     &sk LALT      &kp DQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp GRAVE     &kp GT        &kp RBRC      &kp RPAR      &kp RBKT          &kp AMPS      &sk LCMD      &kp ASTRK     &kp PIPE      &kp BSLH
+    &kp GRAVE     XXX           XXX           XXX           XXX               &kp PLUS      &sk LCMD      XXX           XXX           XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           ___               ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

@@ -8,6 +8,8 @@
 
 compatible = "zmk,combos";
 
+#define BASE QWR CLM
+
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
   combo_##NAME { \
     timeout-ms = <TERM>; \
@@ -16,49 +18,56 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-// Brackets: inner columns
-COMBO(lbrc,            &kp LBRC,              3  4, QWR CLM, 40)
-COMBO(rbrc,            &kp RBRC,              5  6, QWR CLM, 40)
-COMBO(lpar,            &kp LPAR,             13 14, QWR CLM, 40)
-COMBO(rpar,            &kp RPAR,             15 16, QWR CLM, 40)
-COMBO(lbkt,            &kp LBKT,             23 24, QWR CLM, 40)
-COMBO(rbkt,            &kp RBKT,             25 26, QWR CLM, 40)
-COMBO(lt,              &kp LT,               13 24, QWR CLM, 40)
-COMBO(gt,              &kp GT,               16 25, QWR CLM, 40)
-COMBO(colon,           &kp COLON,             6  7, QWR CLM, 40)
-COMBO(equal,           &kp EQUAL,          6  7  8, QWR CLM, 40)
-COMBO(under,           &kp UNDER,             7  8, QWR CLM, 40)
-COMBO(bslh,            &kp BSLH,             28 29, QWR CLM, 40)
-COMBO(pipe,            &kp PIPE,             27 28, QWR CLM, 40)
+// Symbols
+// brackets: middle column
+COMBO(lbrc,            &kp LBRC,              3  4,    BASE, 40)
+COMBO(rbrc,            &kp RBRC,              5  6,    BASE, 40)
+COMBO(lpar,            &kp LPAR,             13 14,    BASE, 40)
+COMBO(rpar,            &kp RPAR,             15 16,    BASE, 40)
+COMBO(lbkt,            &kp LBKT,             23 24,    BASE, 40)
+COMBO(rbkt,            &kp RBKT,             25 26,    BASE, 40)
+COMBO(lt,              &kp LT,                4 14,    BASE, 40)
+COMBO(gt,              &kp GT,               15 15,    BASE, 40)
+// misc: right hand 2-finger
+COMBO(colon,           &kp COLON,             6  7,    BASE, 40)
+COMBO(equal,           &kp EQUAL,             6  8,    BASE, 40)
+COMBO(under,           &kp UNDER,             7  8,    BASE, 40)
+COMBO(bslh,            &kp BSLH,             28 29,    BASE, 40)
+COMBO(pipe,            &kp PIPE,             27 28,    BASE, 40)
 
 // Layers (for one-handed use)
-COMBO(layer_extend,    &mo NAV,              33 19, QWR CLM, 60)
+COMBO(layer_nav,       &mo NAV,              33 19,    BASE, 80)
 
 // Big keys
-COMBO(bspc_l,          &kp BSPC,              1  2, QWR CLM, 40)
-COMBO(ret_l,           &kp RET,              22 23, QWR CLM, 40)
-COMBO(ret_r,           &kp RET,              26 27, QWR CLM, 40)
+COMBO(bspc_l,          &kp BSPC,              1  2,    BASE, 40)
+COMBO(ret_l,           &kp RET,              22 23,    BASE, 40)
+COMBO(ret_r,           &kp RET,              26 27,    BASE, 40)
 
-// Text processing
-// ext layer
-COMBO(capswd,          &caps_word,           13 16,     NAV, 60)
-COMBO(copy_mac,        &kp LG(C),            21 22,     NAV, 40)
-COMBO(paste_mac,       &kp LG(V),            22 23,     NAV, 40)
-COMBO(cut_mac,         &kp LG(X),            21 23,     NAV, 40)
+// Navigation
+COMBO(pg_up,           &kp PG_UP,             7 17,     NAV, 40)
+COMBO(pg_dn,           &kp PG_DN,             6 16,     NAV, 40)
+COMBO(home,            &kp HOME,              5 15,     NAV, 40)
+COMBO(end,             &kp END,               8 18,     NAV, 40)
+COMBO(menu,            &kp K_APP,             8 9,      NAV, 40)
 
 // System
-// ext layer
-COMBO(launch_mac,      &kp LG(SPACE),     11 12 13,     NAV, 40)
-COMBO(back_mac,        &kp LG(LBKT),          1  2,     NAV, 40)
-COMBO(fwd_mac,         &kp LG(RBKT),          2  3,     NAV, 40)
-COMBO(menu_search,     &kp LG(LS(SLASH)),    28 29,     NAV, 60)
+COMBO(capswd,          &caps_word,           13 16,     NAV, 80)
+COMBO(copy_mac,        &kp LG(C),            21 22,     NAV, 80)
+COMBO(paste_mac,       &kp LG(V),            22 23,     NAV, 80)
+COMBO(cut_mac,         &kp LG(X),            21 23,     NAV, 80)
+COMBO(launch_mac,      &kp LG(SPACE),     11 12 13,     NAV, 80)
+COMBO(back_mac,        &kp LG(LBKT),          1  2,     NAV, 80)
+COMBO(fwd_mac,         &kp LG(RBKT),          2  3,     NAV, 80)
+COMBO(menu_search,     &kp LG(LS(SLASH)),    28 29,     NAV, 80)
+COMBO(undo_mac,        &kp LG(Z),            20 21,     NAV, 80)
+COMBO(redo_mac,        &kp LG(LS(Z)),        23 24,     NAV, 80)
 
 // Firmware
 // outer column + non-homing thumb
-COMBO(reset_left,      &reset,             0 10 20, QWR CLM, 60)
-COMBO(reset_right,     &reset,             9 19 29, QWR CLM, 60)
-COMBO(boot_left,       &bootloader,     30 0 10 20, QWR CLM, 60)
-COMBO(boot_right,      &bootloader,     33 9 19 29, QWR CLM, 60)
+COMBO(reset_left,      &reset,             0 10 20,    BASE, 60)
+COMBO(reset_right,     &reset,             9 19 29,    BASE, 60)
+COMBO(boot_left,       &bootloader,     30 0 10 20,    BASE, 60)
+COMBO(boot_right,      &bootloader,     33 9 19 29,    BASE, 60)
 
 
 // vim:ft=c
