@@ -20,20 +20,20 @@ compatible = "zmk,combos";
 
 // Symbols
 // brackets: middle column
-COMBO(lbrc,            &kp LBRC,              3  4,    BASE, 40)
-COMBO(rbrc,            &kp RBRC,              5  6,    BASE, 40)
-COMBO(lpar,            &kp LPAR,             13 14,    BASE, 40)
-COMBO(rpar,            &kp RPAR,             15 16,    BASE, 40)
-COMBO(lbkt,            &kp LBKT,             23 24,    BASE, 40)
-COMBO(rbkt,            &kp RBKT,             25 26,    BASE, 40)
-COMBO(lt,              &kp LT,                4 14,    BASE, 40)
-COMBO(gt,              &kp GT,               15 15,    BASE, 40)
+COMBO(lbrc,            &kp LBRC,              3  4,    BASE, 60)
+COMBO(rbrc,            &kp RBRC,              5  6,    BASE, 60)
+COMBO(lpar,            &kp LPAR,             13 14,    BASE, 60)
+COMBO(rpar,            &kp RPAR,             15 16,    BASE, 60)
+COMBO(lbkt,            &kp LBKT,             23 24,    BASE, 60)
+COMBO(rbkt,            &kp RBKT,             25 26,    BASE, 60)
+COMBO(lt,              &kp LT,                4 14,    BASE, 60)
+COMBO(gt,              &kp GT,                5 15,    BASE, 60)
 // misc: right hand 2-finger
-COMBO(colon,           &kp COLON,             6  7,    BASE, 40)
-COMBO(equal,           &kp EQUAL,             6  8,    BASE, 40)
-COMBO(under,           &kp UNDER,             7  8,    BASE, 40)
-COMBO(bslh,            &kp BSLH,             28 29,    BASE, 40)
-COMBO(pipe,            &kp PIPE,             27 28,    BASE, 40)
+COMBO(colon,           &kp COLON,             6  7,    BASE, 60)
+COMBO(equal,           &kp EQUAL,             6  8,    BASE, 60)
+COMBO(under,           &kp UNDER,             7  8,    BASE, 60)
+COMBO(bslh,            &kp BSLH,             28 29,    BASE, 60)
+COMBO(pipe,            &kp PIPE,             27 28,    BASE, 60)
 
 // Layers (for one-handed use)
 COMBO(layer_nav,       &mo NAV,              33 19,    BASE, 80)
