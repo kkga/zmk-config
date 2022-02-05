@@ -30,7 +30,7 @@ COMBO(lt,              &kp LT,                4 14,    BASE, 60)
 COMBO(gt,              &kp GT,                5 15,    BASE, 60)
 // misc: right hand 2-finger
 COMBO(colon,           &kp COLON,             6  7,    BASE, 60)
-COMBO(equal,           &kp EQUAL,             6  8,    BASE, 60)
+COMBO(equal,           &kp EQUAL,          6  7  8,    BASE, 60)
 COMBO(under,           &kp UNDER,             7  8,    BASE, 60)
 COMBO(bslh,            &kp BSLH,             28 29,    BASE, 60)
 COMBO(pipe,            &kp PIPE,             27 28,    BASE, 60)
