@@ -1,4 +1,4 @@
-#define XXX &none
+#define xxx &none
 #define ___ &trans
 
 // Layer definitions
@@ -10,7 +10,7 @@
 
 // Custom keycodes
 #define MEH        LS(LA(LCTRL))
-#define TMUX       LC(G)
+#define TMUX       LC(A)
 #define D_LT       LC(LG(LEFT))
 #define D_RT       LC(LG(RIGHT))
 #define TAB_RT     LC(TAB)
