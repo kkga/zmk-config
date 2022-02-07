@@ -10,7 +10,6 @@
 
 // Custom keycodes
 #define MEH        LS(LA(LCTRL))
-#define TMUX       LC(A)
 #define D_LT       LC(LG(LEFT))
 #define D_RT       LC(LG(RIGHT))
 #define TAB_RT     LC(TAB)
