@@ -8,12 +8,14 @@
 #define SYM 3
 #define FUN 4
 
+#define SK(KEY) &nk KEY KEY
+
 // Custom keycodes
 #define MEH        LS(LA(LCTRL))
 #define D_LT       LC(LG(LEFT))
 #define D_RT       LC(LG(RIGHT))
 #define TAB_RT     LC(TAB)
 #define TAB_LT     LC(LS(TAB))
-#define BSPWRD     LA(LC(BSPC))
+#define BSPCWRD     LA(LC(BSPC))
 #define UNDO_MAC   LG(Z)
 #define REDO_MAC   LG(LS(Z))
