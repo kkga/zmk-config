@@ -30,6 +30,8 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
+    // normal key on hold, sticky on tap
+    // this is useful for combining sticky mods with mouse actions
     nk: not_so_sticky_key {
       compatible = "zmk,behavior-hold-tap";
       label = "NOT_SO_STICKY_KEY";
@@ -40,17 +42,8 @@
     };
   };
 
-  // conditional_layers {
-  //   compatible = "zmk,conditional-layers";
-  //   tri_layer {
-  //     if-layers = <NAV SYM>;
-  //     then-layer = <NUM>;
-  //   };
-  // };
-
- keymap {
+keymap {
     compatible = "zmk,keymap";
-
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
