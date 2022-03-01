@@ -1,5 +1,0 @@
-#include "clog.keymap"
-
-&default_transform {
-	col-offset = <17>;
-};
