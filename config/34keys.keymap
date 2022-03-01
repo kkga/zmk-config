@@ -77,8 +77,8 @@ keymap {
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
-    &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SQT
-    &am LSHFT Z   &am LALT X    &am LCTL C    &am LCMD V    &kp B             &kp N         &am RCMD M    &am RCTL COMMA &am RALT DOT &am RSHFT FSLH
+    &am LCTL A    &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &am RCTL SQT
+    &kp Z         &am LALT X    &am LSHFT C   &am LCMD V    &kp B             &kp N         &am RCMD M    &am RSHFT COMMA  &am RALT DOT &kp FSLH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &mo NAV       &spctab           &kp RSHFT     &mo SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -90,8 +90,8 @@ keymap {
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
-    &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
-    &am LSHFT Z   &am LALT X    &am LCTL C    &am LCMD D    &kp V             &kp K         &am RCMD H   &am RCTL COMMA &am RALT DOT  &am RSHFT FSLH
+    &am LCTL A    &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &am RCTL O
+    &kp Z         &am LALT X    &am LSHFT C   &am LCMD D    &kp V             &kp K         &am RCMD H    &am RSHFT COMMA  &am RALT DOT  &kp FSLH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &mo NAV       &spctab           &kp RSHFT     &mo SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -103,8 +103,8 @@ keymap {
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp N1        &kp N2        &kp N3        &kp N4        &kp N0            xxx           xxx           xxx           xxx           xxx
-    &kp ESC       &kp D_LT      &kp LG(TAB)   &kp D_RT      &kp TAB           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSPC
-    SK(LSHFT)     SK(LALT)      SK(LCTL)      SK(LCMD)      xxx               xxx           &kp RET       &kp INS       xxx           &kp DEL
+    SK(LCTL)      &kp D_LT      &kp LG(TAB)   &kp D_RT      &kp TAB           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     xxx
+    &ko ESC       SK(LALT)      SK(LSHFT)     SK(LCMD)      xxx               xxx           &kp RET       &kp INS       &kp DEL       &kp BSPC
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           &mo FUN           ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -116,8 +116,8 @@ keymap {
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp PLUS      &kp N7        &kp N8        &kp N9        &kp EQUAL
-    &kp TILDE     &kp GRAVE     &kp SEMI      &kp COLON     &kp CARET         &kp MINUS     &kp N4        &kp N5        &kp N6        &kp N0
-    SK(LSHFT)     SK(LALT)      SK(LCTL)      SK(LCMD)      &kp AMPS          &kp STAR      &kp N1        &kp N2        &kp N3        &kp FSLH
+    SK(LCTL)      &kp TILDE     &kp SEMI      &kp COLON     &kp CARET         &kp MINUS     &kp N4        &kp N5        &kp N6        &kp N0
+    &kp GRAVE     SK(LALT)      SK(LSHFT)     SK(LCMD)      &kp AMPS          &kp STAR      &kp N1        &kp N2        &kp N3        &kp FSLH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           ___               ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
