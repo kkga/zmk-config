@@ -4,10 +4,10 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &thirty_four_key_transform;
+        zmk,matrix_transform = &default_transform;
     };
 
-    thirty_four_key_transform: keymap_transform_2 {
+    default_transform: keymap_transform_0 {
     compatible = "zmk,matrix-transform";
     columns = <34>;
     rows = <1>;
