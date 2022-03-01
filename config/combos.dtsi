@@ -34,8 +34,8 @@ COMBO(bslh,            &kp BSLH,             27 28,    BASE, 60)
 COMBO(layer_nav,       &mo NAV,              33 19,    BASE, 80)
 
 // Big keys
-COMBO(bspc_l,          &kp BSPC,             10 11,    BASE, 60)
-COMBO(bspc_r,          &kp BSPC,             18 19,    BASE, 60)
+// COMBO(bspc_l,          &kp BSPC,             10 11,    BASE, 60)
+// COMBO(bspc_r,          &kp BSPC,             18 19,    BASE, 60)
 COMBO(ret_l,           &kp RET,           11 12 13,    BASE, 60)
 COMBO(ret_r,           &kp RET,           16 17 18,    BASE, 60)
 

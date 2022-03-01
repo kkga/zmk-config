@@ -26,6 +26,10 @@
 #define UNDO_MAC   LG(Z)
 #define REDO_MAC   LG(LS(Z))
 
+// shortcut for mods
+#define AML(k1,k2,k3,k4) &am LCTL k1  &am LALT k2   &am LSHFT k3  &am LCMD k4
+#define AMR(k1,k2,k3,k4) &am LCMD k1  &am LSHFT k2  &am LALT k3   &am LCTL k4
+
 &caps_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
@@ -53,7 +57,7 @@
       bindings = <&kp>, <&kp>;
     };
     // normal key on hold, sticky on tap
-    // this is useful for combining sticky mods with mouse actions
+    // this is useful for combining mods with mouse actions
     nk: not_so_sticky_key {
       compatible = "zmk,behavior-hold-tap";
       label = "NOT_SO_STICKY_KEY";
@@ -78,7 +82,7 @@ keymap {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
     &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SQT
-    &am LCTL Z    &am LALT X    &am LSHFT C   &am LCMD V    &kp B             &kp N         &am RCMD M    &am RSHFT COMMA  &am RALT DOT &am RCTL FSLH
+    AML(Z        ,    X        ,    C        ,    V)        &kp B             &kp N         AMR(M        ,    COMMA    ,    DOT      ,    FSLH)
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &mo NAV       &spctab           &kp RSHFT     &mo SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -129,8 +133,8 @@ keymap {
       label = "FUN";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp C_BRI_DN  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_BRI_UP      &kp F12       &kp F7        &kp F8        &kp F9        xxx
-    xxx           &kp C_PREV    &kp C_PP      &kp C_NEXT    xxx               &kp F11       &kp F4        &kp F5        &kp F6        &to CLM
+    xxx           &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_BRI_UP      &kp F12       &kp F7        &kp F8        &kp F9        xxx
+    xxx           &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_DN      &kp F11       &kp F4        &kp F5        &kp F6        &to CLM
     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_TOG  &bt BT_CLR        &kp F10       &kp F1        &kp F2        &kp F3        &to QWR
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           ___               ___           ___
