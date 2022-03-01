@@ -104,7 +104,7 @@ keymap {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp N1        &kp N2        &kp N3        &kp N4        &kp N0            xxx           xxx           xxx           xxx           xxx
     SK(LCTL)      &kp D_LT      &kp LG(TAB)   &kp D_RT      &kp TAB           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     xxx
-    &ko ESC       SK(LALT)      SK(LSHFT)     SK(LCMD)      xxx               xxx           &kp RET       &kp INS       &kp DEL       &kp BSPC
+    &kp ESC       SK(LALT)      SK(LSHFT)     SK(LCMD)      xxx               xxx           &kp RET       &kp INS       &kp DEL       &kp BSPC
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           &mo FUN           ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
