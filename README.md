@@ -5,8 +5,8 @@ Keymap for 34 keys.
 
 ## Keymap
 
-![](34keys.png)
+![image](https://user-images.githubusercontent.com/1460122/162536685-07663bb8-54ba-4f92-8b46-55eedaf15b90.png)
 
 ## Combos
 
-![](combos.png)
+![image](https://user-images.githubusercontent.com/1460122/162536721-80d43201-9d21-4dc1-a76b-6c5523de8c4b.png)
