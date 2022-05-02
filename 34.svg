@@ -1,7 +1,7 @@
 <svg width="672.5" height="1114" viewBox="0 0 672.5 1114" xmlns="http://www.w3.org/2000/svg">
 <style>
     svg {
-        font-family: inherit;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
         font-size: 13px;
         font-kerning: normal;
         text-rendering: optimizeLegibility;
