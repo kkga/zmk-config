@@ -1,0 +1,144 @@
+layout:
+  split: true
+  rows: 3
+  columns: 5
+  thumbs: 2
+layers:
+  DEF:
+    left:
+      - [q, w, e, r, t]
+      - [a, s, d, f, g]
+      - [
+          { hold: ctl, tap: z },
+          { hold: alt, tap: x },
+          { hold: sft, tap: c },
+          { hold: cmd, tap: v },
+          b,
+        ]
+    right:
+      - [y, u, i, o, p]
+      - [h, j, k, l, "'"]
+      - [
+          n,
+          { hold: cmd, tap: m },
+          { hold: sft, tap: "," },
+          { hold: alt, tap: "." },
+          { hold: ctl, tap: "/" },
+        ]
+    left_thumbs: &left_thumbs
+      - tap: ""
+        hold: NAV
+      - tap: space
+    right_thumbs: &right_thumbs
+      - tap: shift
+      - tap: ""
+        hold: SYM
+    combos: &combos
+      - positions: [12, 13]
+        key: "("
+      - positions: [16, 17]
+        key: ")"
+      - positions: [11, 12]
+        key: "["
+      - positions: [17, 18]
+        key: "]"
+      - positions: [13, 14]
+        key: "<"
+      - positions: [15, 16]
+        key: ">"
+      - positions: [6, 7]
+        key: ":"
+      - positions: [26, 27]
+        key: ";"
+      - positions: [7, 8]
+        key: "_"
+      - positions: [27, 28]
+        key: "\\"
+      - positions: [10, 11]
+        key: "bspc"
+      - positions: [18, 19]
+        key: "bspc"
+      - positions: [21, 22]
+        key: "copy"
+      - positions: [20, 21]
+        key: "undo"
+      - positions: [23, 24]
+        key: "redo"
+  NAV:
+    left:
+      - ["1","2","3","4","5"]
+      - ["esc", "desk\nprev", "cmd+\ntab", "desk\nnext", "tab"]
+      - ["ctl", "alt", "sft", "cmd", "repeat"]
+    right:
+      - [null, null, null, null, null]
+      - ["left", "down", "up", "right", "bspc"]
+      - [null, "return", "insert", null, "del"]
+    left_thumbs:
+      - type: held
+        tap: ""
+        hold: "NAV"
+      - tap: "▽"
+        hold: "FUN"
+    right_thumbs:
+      - tap: "▽"
+      - hold: "SYM"
+        tap: ""
+    combos:
+      - positions: [7, 17]
+        key: "pgup"
+      - positions: [6, 16]
+        key: "pgdn"
+      - positions: [5, 15]
+        key: "home"
+      - positions: [8, 18]
+        key: "end"
+      - positions: [8, 9]
+        key: "app"
+      - positions: [1, 2]
+        key: "back"
+      - positions: [2, 3]
+        key: "fwd"
+      - positions: [1, 11]
+        key: "tabP"
+      - positions: [3, 13]
+        key: "tabN"
+      - positions: [28, 29]
+        key: "srch"
+  SYM:
+    left:
+      - ["!", "@", "#", "$", "%"]
+      - ["~", "`", ";", ":", "^"]
+      - ["ctl", "alt", "sft", "cmd", "&"]
+    right:
+      - ["+", "7", "8", "9", "="]
+      - ["-", "4", "5", "6", "0"]
+      - ["*", "1", "2", "3", "/"]
+    left_thumbs:
+      - tap: ""
+        hold: "NAV"
+      - tap: "▽"
+        hold: ""
+    right_thumbs:
+      - tap: "▽"
+      - type: held
+        hold: "SYM"
+        tap: ""
+  FUN:
+    left:
+      - ["", "vol-dn", "mute", "vol-up", "bri-up"]
+      - ["", "prev", "play", "next", "bri-dn"]
+      - ["bt 0", "bt 1", "bt 2", "output\ntoggle", "bt\nclear"]
+    right:
+      - [F12, F7, F8, F9, ""]
+      - [F11, F4, F5, F6, "to\nclmk"]
+      - [F10, F1, F2, F3, "to\nqwrt"]
+    left_thumbs:
+      - tap: ""
+        hold: "NAV"
+      - type: held
+        tap: "▽"
+        hold: "FUN"
+    right_thumbs:
+      - tap: "▽"
+      - hold: "SYM"
+        tap: ""
