@@ -106,7 +106,7 @@ keymap {
       label = "NAV";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp N1        &kp N2        &kp N3        &kp N4        &kp N0            xxx           xxx           xxx           xxx           xxx
+    &kp N1        &kp N2        &kp N3        &kp N4        &kp N0            &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       xxx
     &kp ESC       &kp D_LT      &kt LG(TAB)   &kp D_RT      &kp TAB           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSPC
     SK(LCTL)      SK(LALT)      SK(LSHFT)     SK(LCMD)      &key_repeat       xxx           &kp RET       &kp INS       xxx           &kp DEL
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯

@@ -39,13 +39,6 @@ COMBO(bspc_r,          &kp BSPC,             18 19,    BASE, 50)
 COMBO(ret_l,           &kp RET,           11 12 13,    BASE, 50)
 COMBO(ret_r,           &kp RET,           16 17 18,    BASE, 50)
 
-// Navigation
-COMBO(pg_up,           &kp PG_UP,             7 17,     NAV, 50)
-COMBO(pg_dn,           &kp PG_DN,             6 16,     NAV, 50)
-COMBO(home,            &kp HOME,              5 15,     NAV, 50)
-COMBO(end,             &kp END,               8 18,     NAV, 50)
-COMBO(menu,            &kp K_APP,             8 9,      NAV, 50)
-
 // System
 COMBO(copy_mac,        &kp LG(C),            21 22,    BASE, 50)
 COMBO(paste_mac,       &kp LG(V),         21 22 23,    BASE, 50)
