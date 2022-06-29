@@ -45,7 +45,7 @@
       label = "SPC_TAB";
       #binding-cells = <0>;
       bindings = <&kp SPACE>, <&kp TAB>;
-      mods = <(MOD_LALT)>;
+      mods = <(MOD_LALT|MOL_LCMD)>;
     };
     am: alpha_modes {
       compatible = "zmk,behavior-hold-tap";
@@ -107,7 +107,7 @@ keymap {
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp N1        &kp N2        &kp N3        &kp N4        &kp N0            &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       xxx
-    &kp ESC       &kp D_LT      &kt LG(TAB)   &kp D_RT      &kp TAB           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSPC
+    &kp ESC       &kp D_LT      &kp LG(TAB)   &kp D_RT      &kp TAB           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSPC
     SK(LCTL)      SK(LSHFT)     SK(LALT)      SK(LCMD)      &key_repeat       xxx           &kp RET       &kp INS       xxx           &kp DEL
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           &mo FUN           ___           ___
