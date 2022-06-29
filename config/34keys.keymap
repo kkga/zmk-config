@@ -45,7 +45,7 @@
       label = "SPC_TAB";
       #binding-cells = <0>;
       bindings = <&kp SPACE>, <&kp TAB>;
-      mods = <(MOD_LALT|MOD_LCMD)>;
+      mods = <(MOD_LALT|MOD_LGUI)>;
     };
     am: alpha_modes {
       compatible = "zmk,behavior-hold-tap";
