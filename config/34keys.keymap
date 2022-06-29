@@ -27,8 +27,8 @@
 #define REDO_MAC   LG(LS(Z))
 
 // shortcut for mods
-#define AML(k1,k2,k3,k4) &am LCTL k1  &am LALT k2   &am LSHFT k3  &am LCMD k4
-#define AMR(k1,k2,k3,k4) &am LCMD k1  &am LSHFT k2  &am LALT k3   &am LCTL k4
+#define AML(k1,k2,k3,k4) &am LCTL k1  &am LSHFT k2  &am LALT k3   &am LCMD k4
+#define AMR(k1,k2,k3,k4) &am LCMD k1  &am LALT k2   &am LSHFT k3  &am LCTL k4
 
 &caps_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE>;
@@ -108,7 +108,7 @@ keymap {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp N1        &kp N2        &kp N3        &kp N4        &kp N0            &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       xxx
     &kp ESC       &kp D_LT      &kt LG(TAB)   &kp D_RT      &kp TAB           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSPC
-    SK(LCTL)      SK(LALT)      SK(LSHFT)     SK(LCMD)      &key_repeat       xxx           &kp RET       &kp INS       xxx           &kp DEL
+    SK(LCTL)      SK(LSHFT)     SK(LALT)      SK(LCMD)      &key_repeat       xxx           &kp RET       &kp INS       xxx           &kp DEL
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           &mo FUN           ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -121,7 +121,7 @@ keymap {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp PLUS      &kp N7        &kp N8        &kp N9        &kp EQUAL
     &kp GRAVE     &kp TILDE     &kp SEMI      &kp COLON     &kp CARET         &kp MINUS     &kp N4        &kp N5        &kp N6        &kp N0
-    SK(LCTL)      SK(LALT)      SK(LSHFT)     SK(LCMD)      &kp AMPS          &kp STAR      &kp N1        &kp N2        &kp N3        &kp FSLH
+    SK(LCTL)      SK(LSHFT)     SK(LALT)      SK(LCMD)      &kp AMPS          &kp STAR      &kp N1        &kp N2        &kp N3        &kp FSLH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               ___           ___               ___           ___
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
