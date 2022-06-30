@@ -13,13 +13,15 @@
 #define SYM 3
 #define FUN 4
 
+#define STICKY_KEY_TIMEOUT 60000
+
 // see &nk behavior below
 #define SK(KEY) &nk KEY KEY
 
 // custom keycodes
 #define MEH        LS(LA(LCTRL))
-#define D_LT       LC(LG(LEFT))
-#define D_RT       LC(LG(RIGHT))
+#define D_LT       LC(LA(P))
+#define D_RT       LC(LA(N))
 #define TAB_RT     LC(TAB)
 #define TAB_LT     LC(LS(TAB))
 #define BSPCWRD    LA(LC(BSPC))
@@ -30,8 +32,16 @@
 #define AML(k1,k2,k3,k4) &am LCTL k1  &am LSHFT k2  &am LALT k3   &am LCMD k4
 #define AMR(k1,k2,k3,k4) &am LCMD k1  &am LALT k2   &am LSHFT k3  &am LCTL k4
 
+&sk {
+  release-after-ms = <STICKY_KEY_TIMEOUT>;
+};
+
 &caps_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+
+&kscan0 {
+  debounce-period = <14>;
 };
 
 / {
@@ -45,8 +55,18 @@
       label = "SPC_TAB";
       #binding-cells = <0>;
       bindings = <&kp SPACE>, <&kp TAB>;
-      mods = <(MOD_LALT|MOD_LGUI)>;
+      mods = <(MOD_LALT)>;
     };
+
+    skq: sticky_key_quick_release {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STICKY_KEY_QUICK_RELEASE";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      quick-release;
+      release-after-ms = <STICKY_KEY_TIMEOUT>;
+    };
+
     am: alpha_modes {
       compatible = "zmk,behavior-hold-tap";
       label = "ALPHA_MODS";
@@ -56,6 +76,7 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
+
     // normal key on hold, sticky on tap
     // this is useful for combining mods with mouse actions
     nk: not_so_sticky_key {
