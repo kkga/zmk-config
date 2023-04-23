@@ -55,8 +55,8 @@ COMBO(menu_search,     &kp LG(LS(SLASH)),    28 29,     NAV, 50)
 
 // Firmware
 // outer column + non-homing thumb
-COMBO(reset_left,      &reset,             0 10 20,    BASE, 50)
-COMBO(reset_right,     &reset,             9 19 29,    BASE, 50)
+COMBO(reset_left,      &sys_reset,         0 10 20,    BASE, 50)
+COMBO(reset_right,     &sys_reset,         9 19 29,    BASE, 50)
 COMBO(boot_left,       &bootloader,     30 0 10 20,    BASE, 50)
 COMBO(boot_right,      &bootloader,     33 9 19 29,    BASE, 50)
 
