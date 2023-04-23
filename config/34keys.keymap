@@ -50,13 +50,13 @@
   };
 
   behaviors {
-    // spctab: space_tab {
-    //   compatible = "zmk,behavior-mod-morph";
-    //   label = "SPC_TAB";
-    //   #binding-cells = <0>;
-    //   bindings = <&kp SPACE>, <&kp TAB>;
-    //   mods = <(MOD_LALT)>;
-    // };
+    spctab: space_tab {
+      compatible = "zmk,behavior-mod-morph";
+      label = "SPC_TAB";
+      #binding-cells = <0>;
+      bindings = <&kp SPACE>, <&kp TAB>;
+      mods = <(MOD_LALT)>;
+    };
 
     skq: sticky_key_quick_release {
       compatible = "zmk,behavior-sticky-key";
